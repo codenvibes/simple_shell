@@ -25,16 +25,17 @@ man or help:
 
 <details>
 <summary>Who designed and implemented the original Unix operating system</summary>
-
-
+The original Unix operating system was designed and implemented by Ken Thompson, Dennis Ritchie, and others at Bell Labs in the early 1970s.
 </details>
 
 <details>
 <summary>Who wrote the first version of the UNIX shell</summary>
+The first version of the Unix shell, known as the "Thompson shell" or "sh", was written by Ken Thompson himself.
 </details>
 
 <details>
 <summary>Who invented the B programming language (the direct predecessor to the C programming language)</summary>
+The B programming language, which was a direct predecessor to the C programming language, was also created by Ken Thompson.
 </details>
 
 <details>
