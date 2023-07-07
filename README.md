@@ -23,6 +23,7 @@ man or help:
 <details>
 <summary><h3>General</h3></summary>
 
+<br>
 <details>
 <summary>Who designed and implemented the original Unix operating system</summary>
 
