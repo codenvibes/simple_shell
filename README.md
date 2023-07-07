@@ -51,9 +51,9 @@ man or help:
 <br>
 
 - What are the three prototypes of `main`<div>The three prototypes of the main function in C are:
-1. `int main(void)`: This version of `main` takes no command-line arguments.
-2. `int main(int argc, char *argv[])`: This version of `main` takes command-line arguments. `argc` represents the number of arguments, and `argv` is an array of strings containing the arguments.
-3. `int main(int argc, char *argv[], char *envp[])`: This version of `main` takes command-line arguments as well as the environment variables.</div>
+    1. `int main(void)`: This version of `main` takes no command-line arguments.
+    2. `int main(int argc, char *argv[])`: This version of `main` takes command-line arguments. `argc` represents the number of arguments, and `argv` is an array of strings containing the arguments.
+    3. `int main(int argc, char *argv[], char *envp[])`: This version of `main` takes command-line arguments as well as the environment variables.</div>
 <br>
 
 - How does the shell use the `PATH` to find the programs<div>The shell uses the `PATH` environment variable to find programs when you enter a command. The `PATH` variable contains a list of directories separated by colons (in Unix-like systems) or semicolons (in Windows). When you enter a command, the shell searches for the corresponding program in each directory listed in `PATH` from left to right until it finds the executable file or reports an error if it's not found.</div>
