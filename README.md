@@ -23,40 +23,20 @@ man or help:
 <details>
 <summary><h3>General</h3></summary>
 
-- Who designed and implemented the original Unix operating system<div>The original Unix operating system was designed and implemented by Ken Thompson, Dennis Ritchie, and others at Bell Labs in the early 1970s.</div>
-
-- Who wrote the first version of the UNIX shell<div>The first version of the Unix shell, known as the "Thompson shell" or "sh", was written by Ken Thompson himself.
-</div>
-
-- Who invented the B programming language (the direct predecessor to the C programming language)<div>The B programming language, which was a direct predecessor to the C programming language, was also created by Ken Thompson.
-</div>
-
-- Who is Ken Thompson<div>Ken Thompson is a computer scientist and one of the key figures in the development of Unix and the C programming language. He is known for his contributions to the original Unix operating system, the creation of the B programming language, and his work on the development of the Plan 9 operating system and the Go programming language.</div>
-
-- How does a shell work<div>A shell is a command-line interpreter that provides an interface for users to interact with the operating system. It reads commands from the user, interprets them, and executes the corresponding programs or actions. The shell also provides features such as input/output redirection, piping, scripting capabilities, and more.</div>
-
-- What is a pid and a ppid<div>In Unix-like operating systems, a PID (Process IDentifier) is a unique numeric identifier assigned to each running process. It is used by the operating system to track and manage processes. PPID (Parent Process IDentifier) refers to the PID of the parent process that created a particular process.</div>
-
-- How to manipulate the environment of the current process<div>To manipulate the environment of the current process in Unix-like systems, you can use environment variables. These variables store information such as paths, settings, and configuration options. You can modify environment variables using commands like `export` or by directly assigning values to them in shell scripts or programming languages.</div>
-
-- What is the difference between a function and a system call<div>A function is a block of code that performs a specific task and can be called from different parts of a program. It encapsulates a series of instructions and can optionally accept input parameters and return values. A system call, on the other hand, is a request made by a program to the operating system kernel to perform privileged operations or access system resources that are not directly accessible from user space.</div>
-
-- How to create processes<div>Processes can be created in Unix-like systems using system calls like `fork()` and `exec()`. The `fork()` system call creates a new process by duplicating the existing process, while `exec()` replaces the current process with a new program.</div>
-
-- What are the three prototypes of `main`<div>The three prototypes of the main function in C are:
-int main(void): This version of main takes no command-line arguments.
-int main(int argc, char *argv[]): This version of main takes command-line arguments. argc represents the number of arguments, and argv is an array of strings containing the arguments.
-int main(int argc, char *argv[], char *envp[]): This version of main takes command-line arguments as well as the environment variables.</div>
-
-- How does the shell use the `PATH` to find the programs<div></div>
-
-- How to execute another program with the `execve` system call<div></div>
-
-- How to suspend the execution of a process until one of its children terminates<div></div>
-
-- What is `EOF` / “end-of-file”?<div>
-</div>
-
+- Who designed and implemented the original Unix operating system<p>The original Unix operating system was designed and implemented by Ken Thompson, Dennis Ritchie, and others at Bell Labs in the early 1970s.</p>
+- Who wrote the first version of the UNIX shell<p>The first version of the Unix shell, known as the "Thompson shell" or "sh", was written by Ken Thompson himself</p>
+- Who invented the B programming language (the direct predecessor to the C programming language)<p>The B programming language, which was a direct predecessor to the C programming language, was also created by Ken Thompson.</p>
+- Who is Ken Thompson<p>Ken Thompson is a computer scientist and one of the key figures in the development of Unix and the C programming language. He is known for his contributions to the original Unix operating system, the creation of the B programming language, and his work on the development of the Plan 9 operating system and the Go programming language.</p>
+- How does a shell work<p>A shell is a command-line interpreter that provides an interface for users to interact with the operating system. It reads commands from the user, interprets them, and executes the corresponding programs or actions. The shell also provides features such as input/output redirection, piping, scripting capabilities, and more.</p>
+- What is a pid and a ppid
+- How to manipulate the environment of the current process
+- What is the difference between a function and a system call
+- How to create processes
+- What are the three prototypes of `main`
+- How does the shell use the `PATH` to find the programs
+- How to execute another program with the `execve` system call
+- How to suspend the execution of a process until one of its children terminates
+- What is `EOF` / “end-of-file”?
 </details>
 
 # Requirements
