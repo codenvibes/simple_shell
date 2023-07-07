@@ -31,9 +31,7 @@ man or help:
 - Who invented the B programming language (the direct predecessor to the C programming language)<div>The B programming language, which was a direct predecessor to the C programming language, was also created by Ken Thompson.
 </div>
 
-<details>
-<summary>Who is Ken Thompson</summary>
-</details>
+- Who is Ken Thompson<div>Ken Thompson is a computer scientist and one of the key figures in the development of Unix and the C programming language. He is known for his contributions to the original Unix operating system, the creation of the B programming language, and his work on the development of the Plan 9 operating system and the Go programming language.</div>
 
 <details>
 <summary>How does a shell work</summary>
