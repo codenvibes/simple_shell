@@ -33,45 +33,29 @@ man or help:
 
 - Who is Ken Thompson<div>Ken Thompson is a computer scientist and one of the key figures in the development of Unix and the C programming language. He is known for his contributions to the original Unix operating system, the creation of the B programming language, and his work on the development of the Plan 9 operating system and the Go programming language.</div>
 
-<details>
-<summary>How does a shell work</summary>
-</details>
+- How does a shell work<div>A shell is a command-line interpreter that provides an interface for users to interact with the operating system. It reads commands from the user, interprets them, and executes the corresponding programs or actions. The shell also provides features such as input/output redirection, piping, scripting capabilities, and more.</div>
 
-<details>
-<summary>What is a pid and a ppid</summary>
-</details>
+- What is a pid and a ppid<div>In Unix-like operating systems, a PID (Process IDentifier) is a unique numeric identifier assigned to each running process. It is used by the operating system to track and manage processes. PPID (Parent Process IDentifier) refers to the PID of the parent process that created a particular process.</div>
 
-<details>
-<summary>How to manipulate the environment of the current process</summary>
-</details>
+- How to manipulate the environment of the current process<div>To manipulate the environment of the current process in Unix-like systems, you can use environment variables. These variables store information such as paths, settings, and configuration options. You can modify environment variables using commands like `export` or by directly assigning values to them in shell scripts or programming languages.</div>
 
-<details>
-<summary>What is the difference between a function and a system call</summary>
-</details>
+- What is the difference between a function and a system call<div>A function is a block of code that performs a specific task and can be called from different parts of a program. It encapsulates a series of instructions and can optionally accept input parameters and return values. A system call, on the other hand, is a request made by a program to the operating system kernel to perform privileged operations or access system resources that are not directly accessible from user space.</div>
 
-<details>
-<summary>How to create processes</summary>
-</details>
+- How to create processes<div>Processes can be created in Unix-like systems using system calls like `fork()` and `exec()`. The `fork()` system call creates a new process by duplicating the existing process, while `exec()` replaces the current process with a new program.</div>
 
-<details>
-<summary>What are the three prototypes of `main`</summary>
-</details>
+- What are the three prototypes of `main`<div>The three prototypes of the main function in C are:
+int main(void): This version of main takes no command-line arguments.
+int main(int argc, char *argv[]): This version of main takes command-line arguments. argc represents the number of arguments, and argv is an array of strings containing the arguments.
+int main(int argc, char *argv[], char *envp[]): This version of main takes command-line arguments as well as the environment variables.</div>
 
-<details>
-<summary>How does the shell use the `PATH` to find the programs</summary>
-</details>
+- How does the shell use the `PATH` to find the programs<div></div>
 
-<details>
-<summary>How to execute another program with the `execve` system call</summary>
-</details>
+- How to execute another program with the `execve` system call<div></div>
 
-<details>
-<summary>How to suspend the execution of a process until one of its children terminates</summary>
-</details>
+- How to suspend the execution of a process until one of its children terminates<div></div>
 
-<details>
-<summary>What is `EOF` / “end-of-file”?</summary>
-</details>
+- What is `EOF` / “end-of-file”?<div>
+</div>
 
 </details>
 
