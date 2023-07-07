@@ -21,10 +21,8 @@ man or help:
 # Learning Objectives
 
 <details>
-<summary>
+<summary><h4>General</h4></summary>
 
-### General
-</summary>
 <details>
 <summary>Who designed and implemented the original Unix operating system</summary>
 
