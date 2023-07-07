@@ -23,10 +23,7 @@ man or help:
 <details>
 <summary><h3>General</h3></summary>
 
-<details>
-<summary>Who designed and implemented the original Unix operating system</summary>
-The original Unix operating system was designed and implemented by Ken Thompson, Dennis Ritchie, and others at Bell Labs in the early 1970s.
-</details>
+- **Who designed and implemented the original Unix operating system**<div>The original Unix operating system was designed and implemented by Ken Thompson, Dennis Ritchie, and others at Bell Labs in the early 1970s.</div>
 
 <details>
 <summary>Who wrote the first version of the UNIX shell</summary>
