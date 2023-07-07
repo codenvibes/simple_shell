@@ -23,8 +23,8 @@ man or help:
 <details>
 <summary><h3>General</h3></summary>
 
-- Who designed and implemented the original Unix operating system<p>The original Unix operating system was designed and implemented by Ken Thompson, Dennis Ritchie, and others at Bell Labs in the early 1970s.</p>
-- Who wrote the first version of the UNIX shell<p>The first version of the Unix shell, known as the "Thompson shell" or "sh", was written by Ken Thompson himself</p>
+- Who designed and implemented the original Unix operating system<div>The original Unix operating system was designed and implemented by Ken Thompson, Dennis Ritchie, and others at Bell Labs in the early 1970s.</div>
+- Who wrote the first version of the UNIX shell<div>The first version of the Unix shell, known as the "Thompson shell" or "sh", was written by Ken Thompson himself</div>
 - Who invented the B programming language (the direct predecessor to the C programming language)<p>The B programming language, which was a direct predecessor to the C programming language, was also created by Ken Thompson.</p>
 - Who is Ken Thompson<p>Ken Thompson is a computer scientist and one of the key figures in the development of Unix and the C programming language. He is known for his contributions to the original Unix operating system, the creation of the B programming language, and his work on the development of the Plan 9 operating system and the Go programming language.</p>
 - How does a shell work<p>A shell is a command-line interpreter that provides an interface for users to interact with the operating system. It reads commands from the user, interprets them, and executes the corresponding programs or actions. The shell also provides features such as input/output redirection, piping, scripting capabilities, and more.</p>
