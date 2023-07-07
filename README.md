@@ -25,21 +25,104 @@ man or help:
 
 ### General
 </summary>
+<details>
+<summary>
 
 - Who designed and implemented the original Unix operating system
+</summary>
+</details>
+
+<details>
+<summary>
+
 - Who wrote the first version of the UNIX shell
+</summary>
+</details>
+
+<details>
+<summary>
+
 - Who invented the B programming language (the direct predecessor to the C programming language)
+</summary>
+</details>
+
+<details>
+<summary>
+
 - Who is Ken Thompson
+</summary>
+</details>
+
+<details>
+<summary>
+
 - How does a shell work
+</summary>
+</details>
+
+<details>
+<summary>
+
 - What is a pid and a ppid
+</summary>
+</details>
+
+<details>
+<summary>
+
 - How to manipulate the environment of the current process
+</summary>
+</details>
+
+<details>
+<summary>
+
 - What is the difference between a function and a system call
+</summary>
+</details>
+
+<details>
+<summary>
+
 - How to create processes
+</summary>
+</details>
+
+<details>
+<summary>
+
 - What are the three prototypes of `main`
+</summary>
+</details>
+
+<details>
+<summary>
+
 - How does the shell use the `PATH` to find the programs
+</summary>
+</details>
+
+<details>
+<summary>
+
 - How to execute another program with the `execve` system call
+</summary>
+</details>
+
+<details>
+<summary>
+
 - How to suspend the execution of a process until one of its children terminates
+</summary>
+</details>
+
+<details>
+<summary>
+
 - What is `EOF` / “end-of-file”?
+</summary>
+</details>
+
 </details>
 
 # Requirements
