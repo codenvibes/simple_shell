@@ -38,15 +38,37 @@ man or help:
 - How does a shell work<div>A shell is a command-line interpreter that provides an interface for users to interact with the operating system. It reads commands from the user, interprets them, and executes the corresponding programs or actions. The shell also provides features such as input/output redirection, piping, scripting capabilities, and more.</div>
 <br>
 
-- What is a pid and a ppid
-- How to manipulate the environment of the current process
-- What is the difference between a function and a system call
-- How to create processes
-- What are the three prototypes of `main`
-- How does the shell use the `PATH` to find the programs
-- How to execute another program with the `execve` system call
-- How to suspend the execution of a process until one of its children terminates
-- What is `EOF` / “end-of-file”?
+- What is a pid and a ppid<div>In Unix-like operating systems, a PID (Process IDentifier) is a unique numeric identifier assigned to each running process. It is used by the operating system to track and manage processes. PPID (Parent Process IDentifier) refers to the PID of the parent process that created a particular process.</div>
+<br>
+
+- How to manipulate the environment of the current process<div>To manipulate the environment of the current process in Unix-like systems, you can use environment variables. These variables store information such as paths, settings, and configuration options. You can modify environment variables using commands like `export` or by directly assigning values to them in shell scripts or programming languages.</div>
+<br>
+
+- What is the difference between a function and a system call<div>A function is a block of code that performs a specific task and can be called from different parts of a program. It encapsulates a series of instructions and can optionally accept input parameters and return values. A system call, on the other hand, is a request made by a program to the operating system kernel to perform privileged operations or access system resources that are not directly accessible from user space.</div>
+<br>
+
+- How to create processes<div>Processes can be created in Unix-like systems using system calls like `fork()` and `exec()`. The `fork()` system call creates a new process by duplicating the existing process, while `exec()` replaces the current process with a new program.</div>
+<br>
+
+- What are the three prototypes of `main`<div>The three prototypes of the main function in C are:
+1. `int main(void)`: This version of `main` takes no command-line arguments.
+2. `int main(int argc, char *argv[])`: This version of `main` takes command-line arguments. `argc` represents the number of arguments, and `argv` is an array of strings containing the arguments.
+3. `int main(int argc, char *argv[], char *envp[])`: This version of `main` takes command-line arguments as well as the environment variables.</div>
+<br>
+
+- How does the shell use the `PATH` to find the programs<div>The shell uses the `PATH` environment variable to find programs when you enter a command. The `PATH` variable contains a list of directories separated by colons (in Unix-like systems) or semicolons (in Windows). When you enter a command, the shell searches for the corresponding program in each directory listed in `PATH` from left to right until it finds the executable file or reports an error if it's not found.</div>
+<br>
+
+- How to execute another program with the `execve` system call<div>To execute another program with the `execve` system call in C, you can use the `execve()` function. It allows you to specify the path to the program, command-line arguments, and the environment variables. The `execve()` function replaces the current process with the specified program.</div>
+<br>
+
+- How to suspend the execution of a process until one of its children terminates<div>To suspend the execution of a process until one of its children terminates, you can use the `wait()` or `waitpid()` system calls. These calls block the parent process until a child process exits. They also provide information about the child process's termination status, which can be used for further processing.
+</div>
+<br>
+
+- What is `EOF` / “end-of-file”?<div>`EOF` stands for "end-of-file" and is a special value used to indicate the end of input in many programming languages. It is commonly associated with input/output operations and is returned when there are no more characters to read from a file or an input stream. Programs can check for `EOF` to determine when to stop reading input.</div>
+<br>
+
 </details>
 
 # Requirements
