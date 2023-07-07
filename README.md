@@ -85,10 +85,7 @@ man or help:
 
 # Requirements
 <details>
-<summary>
-
-### General
-</summary>
+<summary><h3>General</h3></summary>
 
 - Allowed editors: `vi`, `vim`, `emacs`
 - All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
@@ -104,10 +101,7 @@ man or help:
 </details>
 
 <details>
-<summary>
-
-### GitHub
-</summary>
+<summary><h3>GitHub</h3></summary>
 
 _*There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. *_
 </details>
