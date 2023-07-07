@@ -26,17 +26,13 @@ man or help:
 ### General
 </summary>
 <details>
-<summary>
+<summary>Who designed and implemented the original Unix operating system</summary>
 
-- Who designed and implemented the original Unix operating system
-</summary>
+
 </details>
 
 <details>
-<summary>
-
-- Who wrote the first version of the UNIX shell
-</summary>
+<summary>Who wrote the first version of the UNIX shell</summary>
 </details>
 
 <details>
