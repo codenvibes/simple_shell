@@ -6,4 +6,11 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
+#include <sys/types.h>
+
+ssize_t read_command(char **buffer, size_t *bufsize);
+char **tokenize_command(char *buffer);
+void execute_command(char **argv);
+void cleanup(char *buffer, char **argv);
+
 #endif /* COMMAND_H */
