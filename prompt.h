@@ -13,4 +13,3 @@
 void display_prompt(void);
 
 #endif /* PROMPT_H */
-
