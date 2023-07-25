@@ -13,6 +13,8 @@ int (*builtin_func[]) (char **) = {
 	&tsh_exit
 };
 
+size_t sizeof_builtin_str = (sizeof(builtin_str) / sizeof(char *));
+
 /**
  * tsh_loop - Main loop of the shell.
  * Reads input from the user, parses it into commands, and executes them.

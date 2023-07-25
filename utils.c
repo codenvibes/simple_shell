@@ -9,7 +9,8 @@
 
 int tsh_num_builtins(void)
 {
-    return (sizeof(builtin_str) / sizeof(char *));
+	extern size_t sizeof_builtin_str;
+    return (sizeof_builtin_str);
 }
 
 /**
