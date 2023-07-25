@@ -1,5 +1,4 @@
 #include "tsh.h" /* Include main header file */
-#include "builtins.h" /* Include builtins header file */
 
 /* List of builtin commands, followed by their corresponding functions */
 char *builtin_str[] = {
