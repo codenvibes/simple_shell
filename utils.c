@@ -1,5 +1,4 @@
 #include "tsh.h" /* Include main header file */
-#include "builtins.h" /* Include builtins header file */
 
 /* Utility function implementations */
 
