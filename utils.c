@@ -10,7 +10,8 @@
 int tsh_num_builtins(void)
 {
 	extern size_t sizeof_builtin_str;
-    return (sizeof_builtin_str);
+
+	return (sizeof_builtin_str);
 }
 
 /**
@@ -60,6 +61,7 @@ int tsh_launch(char **args)
 int tsh_execute(char **args)
 {
 	int i;
+
 	if (args[0] == NULL)
 	{
 		/*An empty command was entered.*/
