@@ -19,4 +19,7 @@ int tsh_execute(char **args);
 #include <stdio.h>
 #include <string.h>
 
+extern char *builtin_str[];
+extern int (*builtin_func[]) (char **);
+
 #endif /* TSH_H */
