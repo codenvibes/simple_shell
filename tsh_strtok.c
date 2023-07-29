@@ -1,10 +1,10 @@
 #include "tsh.h"
 
 /**
- * **strtow - splits a string into words. Repeat delimiters are ignored
- * @str: the input string
- * @d: the delimeter string
- * Return: a pointer to an array of strings, or NULL on failure
+ * **strtow -  splits a string into words based on a given delimiter
+ * @str: the input string to be split
+ * @d: the delimiter used to split the string
+ * Return: a pointer to an array of strings (words) or NULL if there are no words or if memory allocation fails
  */
 
 char **strtow(char *str, char *d)
@@ -49,10 +49,10 @@ return (s);
 }
 
 /**
- * **strtow2 - splits a string into words
- * @str: the input string
- * @d: the delimeter
- * Return: a pointer to an array of strings, or NULL on failure
+ * **strtow2 - splits a string into words separated by a delimiter
+ * @str: the string to split
+ * @d: the delimiter character
+ * Return: a double pointer to the array of words, or NULL on failure
  */
 char **strtow2(char *str, char d)
 {
