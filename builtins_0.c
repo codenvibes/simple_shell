@@ -52,7 +52,7 @@ if (!data->argv[1])
 {
 dir = fetch_env(data, "HOME=");
 if (!dir)
-cd_stat = /* TODO: what should this be? */
+cd_stat =
 chdir((dir = fetch_env(data, "PWD=")) ? dir : "/");
 else
 cd_stat = chdir(dir);
@@ -66,7 +66,7 @@ tsh_putchar('\n');
 return (1);
 }
 tsh_puts(fetch_env(data, "OLDPWD=")), tsh_putchar('\n');
-cd_stat = /* TODO: what should this be? */
+cd_stat =
 chdir((dir = fetch_env(data, "OLDPWD=")) ? dir : "/");
 }
 else
