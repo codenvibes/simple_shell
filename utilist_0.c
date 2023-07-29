@@ -6,12 +6,12 @@
  */
 
 /**
- * tsh_add_node - adds a node to the start of the list
- * @head: address of pointer to head node
- * @str: str field of node
- * @num: node index used by history
+ * tsh_add_node - Adds a new node at the beginning of a linked list.
+ * @head: Pointer to the head of the linked list.
+ * @str: String to be added to the new node.
+ * @num: Integer to be added to the new node.
  *
- * Return: size of list
+ * Return: Pointer to the new head of the linked list, or NULL if memory allocation fails.
  */
 list_t *tsh_add_node(list_t **head, const char *str, int num)
 {
@@ -39,12 +39,12 @@ return (new_head);
 }
 
 /**
- * add_node_end - adds a node to the end of the list
- * @head: address of pointer to head node
- * @str: str field of node
- * @num: node index used by history
+ * add_node_end - Add a new node at the end of a linked list
+ * @head: Pointer to the head of the linked list
+ * @str: String to be stored in the new node
+ * @num: nteger to be stored in the new node
  *
- * Return: size of list
+ * Return: Pointer to the newly added node, or NULL if memory allocation fails
  */
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
