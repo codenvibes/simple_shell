@@ -24,8 +24,8 @@ int run_loop(cmd_data *data, char **av)
 	{
 		clear_data(data);
 		if (tsh_interact(data))
-			_puts("$ ");
-		_eputchar(BUF_FLUSH);
+			tsh_puts("$ ");
+		err_char(BUF_FLUSH);
 		value = get_input(data);
 		if (value != -1)
 		{
@@ -35,7 +35,7 @@ int run_loop(cmd_data *data, char **av)
 				check_path(data);
 		}
 		else if (tsh_interact(data))
-			_putchar('\n');
+			tsh_putchar('\n');
 		free_data(data, 0);
 	}
 	write_history(data);
@@ -64,19 +64,19 @@ int search_run(cmd_data *data)
 {
 	int x, retval = -1;
 	builtin_reg builtin_entry[] = {
-		{"exit", _myexit},
+		{"exit", exit_cmd},
 		{"env", _myenv},
-		{"help", _myhelp},
-		{"history", _myhistory},
+		{"help", cd_help},
+		{"history", tsh_history},
 		{"setenv", _mysetenv},
 		{"unsetenv", _myunsetenv},
-		{"cd", _mycd},
+		{"cd", cd_cmd},
 		{"alias", _myalias},
 		{NULL, NULL}
 	};
 
 	for (x = 0; builtin_entry[x].type; x++)
-		if (_strcmp(data->argv[0], builtin_entry[x].type) == 0)
+		if (tsh_strcmp(data->argv[0], builtin_entry[x].type) == 0)
 		{
 			data->index++;
 			retval = builtin_entry[x].func(data);
@@ -103,7 +103,7 @@ void check_path(cmd_data *data)
 		data->line_count = 0;
 	}
 	for (x = 0, t = 0; data->arg[x]; x++)
-		if (!is_delim(data->arg[x], " \t\n"))
+		if (!tsh_delim(data->arg[x], " \t\n"))
 			t++;
 	if (!t)
 		return;
@@ -122,7 +122,7 @@ void check_path(cmd_data *data)
 		else if (*(data->arg) != '\n')
 		{
 			data->tsh_status = 127;
-			print_error(data, "not found\n");
+			diplay_error(data, "not found\n");
 		}
 	}
 }
@@ -161,7 +161,7 @@ void tsh_fork(cmd_data *data)
 		{
 			data->tsh_status = WEXITSTATUS(data->tsh_status);
 			if (data->tsh_status == 126)
-				print_error(data, "Permission denied\n");
+				diplay_error(data, "Permission denied\n");
 		}
 	}
 }

@@ -14,7 +14,7 @@
  */
 int tsh_history(cmd_data *data)
 {
-print_list(data->cmd_log);
+tsh_print_list(data->cmd_log);
 return (0);
 }
 

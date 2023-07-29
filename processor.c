@@ -66,7 +66,7 @@ char *abs_path(cmd_data *data, char *src_path, char *cmd)
 
 	if (!src_path)
 		return (NULL);
-	if ((_strlen(cmd) > 2) && starts_with(cmd, "./"))
+	if ((tsh_strlen(cmd) > 2) && match_prefix(cmd, "./"))
 	{
 		if (valid_exe(data, cmd))
 			return (cmd);
@@ -77,11 +77,11 @@ char *abs_path(cmd_data *data, char *src_path, char *cmd)
 		{
 			course = clone_chars(src_path, current, c);
 			if (!*course)
-				_strcat(course, cmd);
+				tsh_strcat(course, cmd);
 			else
 			{
-				_strcat(course, "/");
-				_strcat(course, cmd);
+				tsh_strcat(course, "/");
+				tsh_strcat(course, cmd);
 			}
 			if (valid_exe(data, course))
 				return (course);
